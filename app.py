@@ -25,7 +25,7 @@ def classify_image(img):
 
 image = gr.Image()
 label = gr.Label()
-examples = ['forest.jpg', 'monarch.jpg', 'swallow.jpg']
+examples = ['forest.jpg', 'monarch.jpeg', 'swallow.jpg']
 
 intf = gr.Interface(fn=classify_image, inputs=image, outputs=label, examples=examples)
 intf.launch(inline=False)
